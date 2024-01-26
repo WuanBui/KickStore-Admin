@@ -21,8 +21,8 @@ export default function ProductForm({
       await axios.put("/api/products", { ...data, _id });
     } else {
       await axios.post("/api/products", data);
-      setGoToProducts(true);
-    }
+     
+    }setGoToProducts(true);
   }
   if (goToProducts) {
     router.push("/products");
